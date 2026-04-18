@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Arhaan Interior Studios | Premium Interior Design Karachi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="preloader-spinner"></div>
+    <h3>Arhaan Interior Studios</h3>
+    <p>Transforming Spaces into Art</p>
+  </div>
+</div>
+
+<!-- STICKY NAVBAR -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <i class="fas fa-palette"></i>
+      <span>Arhaan Interior Studios</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#book" class="nav-link">Book Design</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+      <a href="#book" class="consult-btn">Free Idea <i class="fas fa-lightbulb"></i></a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title fade-up">Transforming <span class="gold">Spaces</span> into Art</h1>
+    <p class="hero-subtitle fade-up delay-1">Premium Wallpapers | Textures | Vinyl Flooring | Interior Decor</p>
+    <div class="hero-btns fade-up delay-2">
+      <a href="#gallery" class="btn-primary">Explore Designs <i class="fas fa-arrow-right"></i></a>
+      <a href="#book" class="btn-outline">Book Consultation <i class="fas fa-calendar-check"></i></a>
+    </div>
+    <div class="hero-stats fade-up delay-3">
+      <div class="stat"><span class="counter" data-target="580">0</span><p>Projects Done</p></div>
+      <div class="stat"><span class="counter" data-target="420">0</span><p>Happy Clients</p></div>
+      <div class="stat"><span class="counter" data-target="150">0</span><p>Design Styles</p></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- DESIGN GALLERY (FILTERABLE) -->
+<section id="gallery" class="gallery section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Our <span class="gold">Design Gallery</span></h2>
+      <p>Explore our premium collection of interiors & decor</p>
+    </div>
+    <div class="filter-buttons fade-up delay-1">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Wallpapers">Wallpapers</button>
+      <button class="filter-btn" data-filter="Wall Textures">Wall Textures</button>
+      <button class="filter-btn" data-filter="Vinyl Flooring">Vinyl Flooring</button>
+      <button class="filter-btn" data-filter="Room Decor">Room Decor</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER TRANSFORMATION (SLIDER) -->
+<section class="transformation section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Before & <span class="gold">After</span> Transformation</h2>
+      <p>See how we turn ordinary spaces into extraordinary interiors</p>
+    </div>
+    <div class="before-after-container fade-up">
+      <div class="ba-wrapper">
+        <div class="ba-image">
+          <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&w=800" alt="Before" id="beforeImg">
+          <div class="ba-overlay" id="baOverlay">
+            <img src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&w=800" alt="After" id="afterImg">
+          </div>
+          <div class="ba-slider" id="baSlider">
+            <i class="fas fa-arrows-alt-h"></i>
+          </div>
+        </div>
+        <div class="ba-labels"><span>Before</span><span>After</span></div>
+      </div>
+      <p class="ba-caption">Drag the slider to see the transformation</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN STYLES SHOWCASE -->
+<section class="design-styles section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Our <span class="gold">Design Styles</span></h2>
+      <p>Find your perfect aesthetic</p>
+    </div>
+    <div class="styles-grid">
+      <div class="style-card fade-up"><div class="style-img" style="background-image: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=400');"></div><h3>Modern</h3><p>Clean lines, minimal elegance</p></div>
+      <div class="style-card fade-up delay-1"><div class="style-img" style="background-image: url('https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&w=400');"></div><h3>Luxury</h3><p>Opulent finishes, grand spaces</p></div>
+      <div class="style-card fade-up delay-2"><div class="style-img" style="background-image: url('https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&w=400');"></div><h3>Minimalist</h3><p>Less is more, serene vibes</p></div>
+      <div class="style-card fade-up delay-3"><div class="style-img" style="background-image: url('https://images.pexels.com/photos/3757055/pexels-photo-3757055.jpeg?auto=compress&w=400');"></div><h3>Classic</h3><p>Timeless beauty, traditional charm</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Our <span class="gold">Premium Services</span></h2>
+      <p>Complete interior solutions for your dream space</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up"><i class="fas fa-paint-roller"></i><h3>Wallpaper Installation</h3><p>Premium designer wallpapers for every room</p></div>
+      <div class="service-card fade-up delay-1"><i class="fas fa-brush"></i><h3>Wall Texture Design</h3><p>Exclusive textures & artistic finishes</p></div>
+      <div class="service-card fade-up delay-2"><i class="fas fa-layer-group"></i><h3>Vinyl Flooring</h3><p>Durable, stylish & waterproof flooring</p></div>
+      <div class="service-card fade-up delay-3"><i class="fas fa-couch"></i><h3>Full Interior Decoration</h3><p>Complete home styling & furnishing</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Why Choose <span class="gold">Arhaan</span></h2>
+      <p>Excellence in every detail</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up"><i class="fas fa-smile-wink"></i><h4>100% Client Satisfaction</h4><p>Hundreds of happy homeowners</p></div>
+      <div class="why-card fade-up delay-1"><i class="fas fa-magic"></i><h4>Trendy Designs</h4><p>Latest styles & innovations</p></div>
+      <div class="why-card fade-up delay-2"><i class="fas fa-tag"></i><h4>Affordable Pricing</h4><p>Luxury within your budget</p></div>
+      <div class="why-card fade-up delay-3"><i class="fas fa-hard-hat"></i><h4>Professional Work</h4><p>Expert installation & service</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK YOUR DESIGN (LEAD FORM + WHATSAPP) -->
+<section id="book" class="booking-section section-padding">
+  <div class="container">
+    <div class="booking-wrapper">
+      <div class="booking-info fade-right">
+        <h3>Book Your <span class="gold">Dream Design</span></h3>
+        <p>Get a free consultation and quote for your interior project</p>
+        <div class="offer-badge"><i class="fas fa-gift"></i> Free Design Idea with every booking</div>
+        <div class="call-cta">
+          <a href="tel:+923312627378" class="call-now"><i class="fas fa-phone-alt"></i> Call Now for Instant Quote</a>
+        </div>
+      </div>
+      <div class="booking-form fade-left">
+        <h4>Request a Design Quote</h4>
+        <form id="bookingForm">
+          <input type="text" id="bookName" placeholder="Full Name" required>
+          <input type="tel" id="bookPhone" placeholder="Phone Number" required>
+          <input type="text" id="bookCity" placeholder="City" value="Karachi" required>
+          <select id="bookService" required>
+            <option value="">Select Service</option>
+            <option>Wallpaper Installation</option>
+            <option>Wall Texture Design</option>
+            <option>Vinyl Flooring</option>
+            <option>Full Interior Decoration</option>
+          </select>
+          <textarea id="bookMessage" rows="3" placeholder="Tell us about your space / requirements..." required></textarea>
+          <button type="submit" class="btn-primary whatsapp-send"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SLIDER -->
+<section id="testimonials" class="testimonials-section section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Client <span class="gold">Testimonials</span></h2>
+      <p>What our customers say about us</p>
+    </div>
+    <div class="testimonial-slider">
+      <div class="testi-slider-container" id="testiSliderContainer">
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"Amazing wallpaper collection! Arhaan transformed my living room completely."</p><h4>- Sarah Khan</h4><div class="stars">★★★★★</div></div>
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"Professional team, high-quality textures. Highly recommended!"</p><h4>- Usman Ali</h4><div class="stars">★★★★★</div></div>
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"Best interior designers in Karachi. Love my new vinyl flooring!"</p><h4>- Fatima Rizvi</h4><div class="stars">★★★★★</div></div>
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"Affordable luxury. They understood my vision perfectly."</p><h4>- Ahmed Hassan</h4><div class="stars">★★★★★</div></div>
+      </div>
+      <button class="testi-btn prev" id="prevTesti"><i class="fas fa-chevron-left"></i></button>
+      <button class="testi-btn next" id="nextTesti"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM FEED PREVIEW -->
+<section class="instagram-feed section-padding">
+  <div class="container">
+    <div class="section-header fade-up">
+      <h2>Follow Us on <span class="gold">Instagram</span></h2>
+      <p>@ariesdecor | Latest inspirations & projects</p>
+    </div>
+    <div class="instagram-grid" id="instagramGrid"></div>
+    <div class="insta-btn-wrapper">
+      <a href="https://www.instagram.com/ariesdecor" target="_blank" class="insta-follow-btn"><i class="fab fa-instagram"></i> Follow @ariesdecor</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION SECTION + GOOGLE MAPS -->
+<section id="contact" class="location-section section-padding">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-details fade-right">
+        <h3>Visit Our Studio</h3>
+        <div class="address"><i class="fas fa-map-marker-alt"></i><p>Plot #307, Universal Heights, Opp Royal Icon, Gulshan-e-Iqbal 13-D-3, Karachi, Pakistan</p></div>
+        <div class="contact-item"><i class="fas fa-phone-alt"></i><p>0331 2627378</p></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><p>ariesinterior786@gmail.com</p></div>
+        <div class="social-links">
+          <a href="https://wa.me/923312627378" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+923312627378"><i class="fas fa-phone"></i></a>
+          <a href="https://www.instagram.com/ariesdecor" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ArhaanInteriorStudios" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="map-wrapper fade-left">
+        <iframe src="https://maps.google.com/maps?q=Gulshan-e-Iqbal+Karachi+Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius: 24px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><h3><i class="fas fa-palette"></i> Arhaan Interior Studios</h3><p>Transforming Spaces into Art since 2015</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#services">Services</a></li><li><a href="#book">Book Design</a></li></ul></div>
+      <div class="footer-social"><h4>Connect</h4><div class="social-icons"><a href="https://wa.me/923312627378"><i class="fab fa-whatsapp"></i></a><a href="https://www.instagram.com/ariesdecor"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/ArhaanInteriorStudios"><i class="fab fa-facebook-f"></i></a></div></div>
+    </div>
+    <div class="copyright">© 2025 Arhaan Interior Studios — Premium Interior Design Karachi. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="floating-actions">
+  <a href="https://wa.me/923312627378" class="float-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+  <a href="tel:+923312627378" class="float-btn call"><i class="fas fa-phone-alt"></i><span>Call</span></a>
+  <a href="https://www.instagram.com/ariesdecor" class="float-btn instagram" target="_blank"><i class="fab fa-instagram"></i><span>IG</span></a>
+  <a href="https://www.facebook.com/ArhaanInteriorStudios" class="float-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i><span>FB</span></a>
+</div>
+
+<!-- MODAL FOR FULLSCREEN PREVIEW -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div id="modalImageContainer"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
